@@ -1,7 +1,12 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Solve and keep inverse matrices in memory
+## 1. Function that builds the vector of functions to set and get the solved solution
+## 2. Manager function to check if the inverse has already been calculated
+## and manipulate the functions in the preceding vector
 
-## Write a short comment describing this function
+
+## 4 functions in one vector
+## set() and get() relevant matrix
+## setinv() and getinv() corresponding inverse matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -19,7 +24,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve relates the inverse demand to the functions inside makeCacheMatrix function
+## checks if the inverse has already been calculated
+## gets the data if so
+## sets the inverse if not
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
